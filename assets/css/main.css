@@ -70,6 +70,27 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}	
+
+.skip-to-main-content-link {
+	clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	margin: -1px;
+}
+.skip-to-main-content-link:focus {
+	clip: auto;
+	height: auto;
+	overflow: visible;
+	position: static;
+	white-space: normal;
+	width: auto;
+	margin: auto;
+	color: #ffffff;
 }
 
 /* Basic */
@@ -2042,6 +2063,12 @@ input, select, textarea {
 						}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			.row {
+				animation: none;
+			}
+		}
+
 
 /* Box */
 
@@ -2318,6 +2345,12 @@ input, select, textarea {
 					}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			form {
+				animation: none;
+			}
+		}
+
 
 	label {
 		display: block;
@@ -2666,6 +2699,12 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			.image {
+				animation: none;
+			}
+		}
+
 
 	a.image {
 		overflow: hidden;
@@ -2806,6 +2845,12 @@ input, select, textarea {
 						}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			.ul {
+				animation: none;
+			}
+		}
+
 
 /* Icons */
 
@@ -3289,6 +3334,12 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#wrapper {
+				animation: none;
+			}
+		}
+
 
 /* Intro */
 
@@ -3502,6 +3553,12 @@ input, select, textarea {
 				}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#intro {
+				animation: none;
+			}
+		}
+
 
 /* Header */
 
@@ -3615,6 +3672,14 @@ input, select, textarea {
 				}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#header {
+				animation: none;
+			}
+		}
+
+
+		
 
 /* Nav */
 
@@ -3906,7 +3971,6 @@ input, select, textarea {
 				}
 
 			}
-
 			@media screen and (max-width: 736px) {
 
 				#main > .posts > * {
@@ -3957,6 +4021,12 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#main {
+				animation: none;
+			}
+		}
+
 
 /* Footer */
 
@@ -4394,6 +4464,12 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#footer {
+				animation: none;
+			}
+		}
+
 
 	#copyright {
 		color: #ffffff;
@@ -4495,6 +4571,12 @@ input, select, textarea {
 				}
 
 		}
+		@media screen and (prefers-reduced-motion: reduce) {
+			#copyright {
+				animation: none;
+			}
+		}
+
 
 /* Nav Panel */
 
@@ -4562,6 +4644,12 @@ input, select, textarea {
 				padding: 0.25rem 1rem;
 			}
 
+		}
+
+		@media screen and (prefers-reduced-motion: reduce) {
+			#navPanelToggle {
+				animation: none;
+			}
 		}
 
 	#navPanel {
@@ -4700,3 +4788,11 @@ input, select, textarea {
 		}
 
 	}
+
+	@media (prefers-reduced-motion) {
+		#body, #header, #nav, #footer {
+			animation: none;
+		}
+	}
+
+
