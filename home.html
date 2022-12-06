@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Neil's Portfolio</title>
 		<meta charset="utf-8" />
@@ -8,18 +8,15 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div>
-			<a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-		</div>	
+		<a href="#main" class="skip-main">Skip to main content</a>
 
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-				<a href="#main" class="skip-to-main-content-link">Skip to main content</a>
 
 				<!-- Intro -->
 					<div id="intro">
-					</a><img src="images/Kim_Neil_Photo.jpg" style="border-radius: 100px; margin-top: -100px; margin-bottom: 50px;" width="275" height="350"/></a>
+					</a><img src="images/Kim_Neil_Photo.jpg" alt = "Portrait of Neil Kim" style="border-radius: 100px; margin-top: -100px; margin-bottom: 50px;" width="275" height="350"/></a>
 						<h1>Neil Kim</h1>
 						<p>Showcase of my portfolio, my resumé, and a little about myself and my abilities</p>
 						<ul class="actions">
@@ -39,6 +36,9 @@
 					<nav id="nav">
 						<ul class="links">
 							<a href="images/Neil_Kim_Resume.pdf" style="padding-left: 40px;">My Resumé</a>
+						</ul>
+						<ul class="links">
+							<a href="home.html" class="logo">Projects</a>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/neil-kim-5a5356204/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
@@ -63,14 +63,18 @@
 									<h2>Project Showcase</h2>
 								</header>
 							</article>
-<!-- 
-							<section class="posts">
-								<article>
+							<article class = "classes-taken">
 								<header>
-									<h7>Project Showcase</h7>
+									<h3>EECS Courses Taken</h3>
 								</header>
+								<div id="grid-col">
+									<div class="cell" tabindex="0">EECS 183</div> <div class="cell" tabindex="0">EECS 280</div>
+									<div class="cell" tabindex="0">EECS 281</div> <div class="cell" tabindex="0">EECS 370</div>
+									<div class="cell" tabindex="0">EECS 376</div> <div class="cell" tabindex="0">EECS 493</div>
+									<div class="cell" tabindex="0">EECS 481</div> <div class="cell" tabindex="0">EECS 485</div>
+									<div class="cell" tabindex="0">EECS 484</div>
+								</div>
 							</article>
-						</section> -->
 
 						<!-- Posts -->
 							<section class="posts">
@@ -81,7 +85,7 @@
 											<h2>Deque<br />
 											Pathfinder</h2>
 										</header>
-										<a class="image fit"><img src="images/Mario.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/Mario.jpg" alt="Picture of Mario" tabindex = "0"/></a>
 										<p>This project showcases the use of a deque container that is used as both a stack and a queue. The program is given
 											a map with obstacles, enemies and elevators as input. Using the deque as a search container a path is found and traced back
 											to print the answer from the start to the finish. The project is Mario themed, so the idea is that Mario must find 
@@ -93,11 +97,11 @@
 									</article>
 									<article>
 										<header>
-											
+
 											<h2>Priority Queue<br />
 											War</h2>
 										</header>
-										<a class="image fit"><img src="images/Star.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/Star.jpg" alt="Picture of Star Wars figure" tabindex="0"/></a>
 										<p>This project showcases the use of a priority queue by simulating a multi-planetary war. The project is Star Wars themed and is given a list of 
 											solider attributes, number of generals, number of planests and more as input. It can also be randomly processed to create a random battle instead of
 											inputting specific input. The battle commences on run and the outcome of each battle including the total war, with specifc stats is outputted.
@@ -112,7 +116,7 @@
 											<h2>Priority Queue<br />
 											Implementation</h2>
 										</header>
-										<a class="image fit"><img src="images/PQ.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/PQ.jpg" alt="Picture of code on laptop" tabindex="0"/></a>
 										<p>This is a implementation of several priority queue libraries. Including a binary priority queue, a pairing priority queue, a sorted priority queue, and an unordered-fast priority queue.
 	
 										</p>
@@ -126,7 +130,7 @@
 											<h2>Hash Table<br />
 											Logman</h2>
 										</header>
-										<a href="#" class="image fit"><img src="images/Log.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/Log.jpg" alt="Picture of filing cabinent" tabindex="0"/></a>
 										<p> This project showcases the use of a hashtable to create an excerpt list from large log files. 
 											The program will begin by reading an input file containing log entries, 
 											and then will enter an interactive mode where the user can perform timestamp, category, and keyword searches 
@@ -142,7 +146,7 @@
 											<h2>Optimization<br />
 											Traveling Salesperson</h2>
 										</header>
-										<a class="image fit"><img src="images/map.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/map.jpg" alt="Picture of a map with needles" tabindex="0"/></a>
 										<p>This project showcases minimum spanning tree algorithms, branch and bound algorithms and the Traveling Salesperson problem. In the first
 											part you are given map coordinates as input and are asked to calculate the MST and output its weight. In the later parts of the project
 											we solve the Traveling Salesperson problem in the most efficient way possible using a branch and bounc algorithm.  </p>
@@ -155,7 +159,7 @@
 											<h2>Card Game<br />
 											Euchre</h2>
 										</header>
-										<a class="image fit"><img src="images/euchre.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/euchre.jpg" alt="Decks of cards spread out" tabindex="0"/></a>
 										<p>
 										Euchre (pronounced “YOO-kur”) is a trick-taking card game popular in Michigan. 
 										It is most commonly played by four people in two partnerships with a deck of 24 cards. 
@@ -173,7 +177,7 @@
 											<h2>Image<br />
 											Resizing</h2>
 										</header>
-										<a class="image fit"><img src="images/ImageResize.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/ImageResize.jpg" alt="Picture of a camera" tabindex="0"/></a>
 										<p>
 										This project showcases a program that allows for proper image resizing. This is done by implementing
 										the seam carving algorithm. This allows for content aware-resizing of images. The end result is that we can resize images 
@@ -188,7 +192,7 @@
 											
 											<h2>Length Extension & Hash Collision Attack<br /></h2>
 										</header>
-										<a class="image fit"><img src="images/hack.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/hack.jpg" alt="Cybersecurity photo" tabindex="0"/></a>
 										<p>
 										This project showcases a python script that shows the vulnerabilties of the MD5, SHA-1, and SHA-256 hashing
 										methods. In the first part the script preforms a length extension attack on a poorly secured website. The second
@@ -205,7 +209,7 @@
 											<h2>SQL<br />
 											"Fakebook" Database</h2>
 										</header>
-										<a class="image fit"><img src="images/data.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/data.jpg" alt="A huge database" tabindex="0"/></a>
 										<p>
 										This project showcases an SQL program that mimics the database of the popular social media platform "Facebook". Renamed "Fakebook" 
 										the program allows for tables to be created and dropped for many aspects of the platform data. It allows for the insertion of a public
@@ -221,7 +225,7 @@
 											<h2>Machine Learning<br />
 											Piazza Posts</h2>
 										</header>
-										<a class="image fit"><img src="images/AI.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/AI.jpg" alt="Picture of an AI" tabindex="0"/></a>
 										<p>
 										This project showcases a program that uses natural language processing and machine learning techniques 
 										to automatically identify the subject of posts. As input we used posts from a popular website used amongst college
@@ -238,7 +242,7 @@
 											<h2>Rock, Paper, Scissors<br />
 											Shoot</h2>
 										</header>
-										<a class="image fit"><img src="images/rps.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/rps.jpg" alt="Rock Paper Scissors" tabindex="0"/></a>
 										<p>
 										This project showcases a program that simply simulates the well-known game Rock, Paper, Scissors. The game can be
 										played with two users or it can be played with a bot.
@@ -253,7 +257,7 @@
 											<h2>Encrypting and Decrypting<br />
 											Cipher Text</h2>
 										</header>
-										<a class="image fit"><img src="images/Cipher.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/Cipher.jpg" alt="Key to encryption" tabindex="0"/></a>
 										<p>
 										This project showcases a program that can both encrypt and decrypt ciphertext. The program features three
 										different ciphers. These ciphers includes the famous Cesars' Cipher, the well-known Vigenere Cipher, and finally
@@ -270,7 +274,7 @@
 											<h2>Battleship<br />
 											Simulator</h2>
 										</header>
-										<a class="image fit"><img src="images/BS.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/BS.jpg" alt="Battleship picture" tabindex="0"/></a>
 										<p>
 										This project showcases a program that simulates the popular game Battleship. Battleship is a strategy-based 
 										game which requires players to strategically geuss where their opponents ships are. The game is played
@@ -286,7 +290,7 @@
 											<h2>Image<br />
 											Creation</h2>
 										</header>
-										<a class="image fit"><img src="images/ImgCreate.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/ImgCreate.jpg" alt="Camera taking picture" tabindex="0"/></a>
 										<p>
 										This project showcases a program that allows the user to create images. Users can draw lines, set pixels and redraw
 										images to their specification. Users can choose to draw using lines, points, rectangles, circles, triangles and other
